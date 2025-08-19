@@ -272,17 +272,33 @@
 
 
 // ques 18
-class Demo{
-    int x=90;
-    void show(){
-        int x=99;
-        System.out.println("local x "+x);
-        System.out.println("instance x "+this.x);
-    }
+// class Demo{
+//     int x=90;
+//     void show(){
+//         int x=99;
+//         System.out.println("local x "+x);
+//         System.out.println("instance x "+this.x);
+//     }
+// }
+// public class one{
+//     public static void main(String[] args) {
+//         Demo d=new Demo();
+//         d.show();
+//     }
+// }
+
+
+// ques 19
+class Student{
+    String name;
 }
 public class one{
     public static void main(String[] args) {
-        Demo d=new Demo();
-        d.show();
+        Student s1=new Student();
+        s1.name="alice";
+        Student s2=new Student();
+        s2.name="erica";
+        System.out.println(s1.name);
+        System.out.println(s2.name);
     }
 }
