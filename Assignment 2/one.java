@@ -230,22 +230,28 @@
 
 
 // ques 15
-class Demo{
-    int val;
-    void setVal(int v){
-        val =v;
-    }
-    void showVal(){
-        System.out.println("value "+val);
-    }
-}
-public class one{
-    public static void main(String[] args) {
-        Demo d=new Demo();
-        d.setVal(78);
-        d.showVal();
-    }
-}
+// class Demo{
+//     int val;
+//     void setVal(int v){
+//         val =v;
+//     }
+//     void showVal(){
+//         System.out.println("value "+val);
+//     }
+// }
+// public class one{
+//     public static void main(String[] args) {
+//         Demo d=new Demo();
+//         d.setVal(78);
+//         d.showVal();
+//     }
+// }
 
 
 // ques 16
+public class one{
+    public static void main(String[] args){
+        int x;
+        System.out.println(x);
+    }
+}
