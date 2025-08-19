@@ -259,12 +259,30 @@
 
 
 // ques 17
-class Const{
-    static final double PI=3.14;
+// class Const{
+//     static final double PI=3.14;
+// }
+// public class one{
+//     public static void main(String[] args) {
+//         Const.PI=3.14159;
+//         System.out.println(Const.PI);
+//         //The final field Const.PI cannot be assigned
+//     }
+// }
+
+
+// ques 18
+class Demo{
+    int x=90;
+    void show(){
+        int x=99;
+        System.out.println("local x "+x);
+        System.out.println("instance x "+this.x);
+    }
 }
 public class one{
     public static void main(String[] args) {
-        Const.PI=3.14159;
-        System.out.println(Const.PI);
+        Demo d=new Demo();
+        d.show();
     }
 }
