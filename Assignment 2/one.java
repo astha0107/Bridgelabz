@@ -249,9 +249,22 @@
 
 
 // ques 16
+// public class one{
+//     public static void main(String[] args){
+//         int x;
+//         System.out.println(x);
+//         //local variable x may not have initialized
+//     }
+// }
+
+
+// ques 17
+class Const{
+    static final double PI=3.14;
+}
 public class one{
-    public static void main(String[] args){
-        int x;
-        System.out.println(x);
+    public static void main(String[] args) {
+        Const.PI=3.14159;
+        System.out.println(Const.PI);
     }
 }
