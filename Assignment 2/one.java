@@ -108,13 +108,144 @@
 // }
 
 // ques 7
-public class one {
-    public static void main(String[] args) {
-        Test t=new Test();
-        t.x=20;
+// public class one {
+//     public static void main(String[] args) {
+//         Test t=new Test();
+//         t.x=20;
+//     }
+// }
+// class Test{
+//     final int x=80;
+// }
+// //here compilation problem is that final feild Test.x cannot be resolved.
+
+// ques 8
+// class Demo{
+//     static int x;
+//     static{
+//         x=89;
+//         System.out.println("static block is executed");
+//     }
+// }
+// public class one{
+//     public static void main(String[] args) {
+//         System.out.println("value of x "+Demo.x);
+//     }
+// }
+
+
+// ques 9
+// class Acc{
+//     String accHolder;
+//     double balance;
+// }
+// public class one{
+//     public static void main(String[] args) {
+//         Acc a=new Acc();
+//         System.out.println("Holder: "+a.accHolder);
+//         System.out.println("balance: "+a.balance);
+//     }
+// }
+
+
+// ques 10
+// class Variables{
+//     int instancevar=20;
+//     static int staticvar=40;
+//     void show(){
+//         int local=90;
+//         System.out.println("instancevar: "+instancevar);
+//         System.out.println("staticvar: "+staticvar);
+//         System.out.println("local: "+local);
+//     }
+// }
+// public class one{
+//     public static void main(String[] args) {
+//         Variables v=new Variables();
+//         v.show();
+//     }
+// }
+
+
+// ques 11
+// class Test{
+//     static int x;
+// }
+// public class one{
+//     public static void main(String[] args) {
+//         System.out.println("before value "+Test.x);
+//         Test.x=90;
+//         System.out.println("after value "+Test.x);
+//     }
+// }
+
+
+// ques12
+// class Demo{
+//     final int userid;
+//     Demo(int id){
+//         userid=id;
+//     }
+// }
+// public class one{
+//     public static void main(String[] args) {
+//         Demo d=new Demo(100);
+//         System.out.println("user id is "+d.userid);
+//     }
+// }
+
+
+// ques 13
+// class A{
+//     static int x=90;
+// }
+// class B{
+//     void change(){
+//         A.x=89;
+//     }
+// }
+// public class one{
+//     public static void main(String[] args) {
+//         B b=new B();
+//         b.change();
+//         System.out.println(A.x);
+//     }
+// }
+
+
+// ques 14
+// class Test{
+//     String name;
+//     void check(String name){
+//         this.name=name;
+//     }
+// }
+// public class one{
+//     public static void main(String[] args) {
+//         Test t =new Test();
+//         t.check("astha");
+//         System.out.println("name is "+t.name);
+//     }
+// }
+
+
+// ques 15
+class Demo{
+    int val;
+    void setVal(int v){
+        val =v;
+    }
+    void showVal(){
+        System.out.println("value "+val);
     }
 }
-class Test{
-    final int x=80;
+public class one{
+    public static void main(String[] args) {
+        Demo d=new Demo();
+        d.setVal(78);
+        d.showVal();
+    }
 }
-//here compilation problem is that final feild Test.x cannot be resolved.
+
+
+// ques 16
