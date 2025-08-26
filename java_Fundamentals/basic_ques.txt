@@ -1,0 +1,25 @@
+
+            // Answers
+
+            * 1.JDK is a complete software development kit which help in develop java application whereas JRE is  java runtime environment which provides libraries , jvm and other components to run java applications
+            * 
+            * 2.JVM- Java Virtual Machine helps enables computer to run code written in java.
+            * 
+            * 3. stack area and heap area
+            * 
+            * 4. JIT compiler helps to covert bytecode into native machine language code at runtime.
+            * 
+            * 5. (a) java is platform independent
+                 (b) memory allocation is less since it has garbage collector of its own   
+            * 
+            * 6.Java is ‘write once and
+                run anywhere’ language because it compiles in bytecode which can be run at any sysytem
+            * 
+            * 7. ClassLoader loads the class files into memory. it verifies the correctness of bytecode
+            * 
+            * 8. No, 'main' in main method is not a keyword in java. it is identifier or entry point in java.
+
+             
+
+
+
