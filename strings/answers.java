@@ -2,7 +2,7 @@ package strings;
 
 public class answers {
     public static void main(String[] args) {
-        //ans
+        //ans two strings are equal
         String a = "astha";
         String b = "Astha";
         
