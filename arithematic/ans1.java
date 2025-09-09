@@ -3,15 +3,27 @@ import java.util.Scanner;
 import java.util.Random;
 public class ans1 {
     public static void main(String[] args) {
-        
-    }
-    public static int generateGuess(int low, int high) {
+         Scanner sc = new Scanner(System.in);
         Random rand = new Random();
-        return rand.nextInt(high - low + 1) + low; // inclusive range
-    }
-     public static String getFeedback(Scanner sc, int guess) {
-        System.out.print("Is the number " + guess + "? (enter: high / low / correct): ");
-        return sc.nextLine().trim().toLowerCase();
+        int number = rand.nextInt(100) + 1;
+        int guess = 0;
+        int attempt = 0;
+        System.out.println("Guess a number between 1 and 100");
+        while (guess != number) {
+            guess = sc.nextInt();
+            attempt++;
+            if (guess < number) {
+                System.out.println("Too low! Try again.");
+            }
+            else if (guess > number) {
+                System.out.println("Too high! Try again.");
+            }
+            else {
+                System.out.println("Congratulations! You've guessed the number " + number + " in " + attempt + " attempts.");
+            }
+        }
+
     }
     
+
 }
