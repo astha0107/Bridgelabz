@@ -20,7 +20,7 @@ public class lib_manage_sys {
         library1.displayBooks();
         library2.displayBooks();
 
-        System.out.println("Independent Book:");
+        System.out.println("Independent book:");
         book3.displayBook();
     }
 }
