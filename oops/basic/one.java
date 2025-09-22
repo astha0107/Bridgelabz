@@ -11,6 +11,7 @@ class student{
     String name;
     int rollno;
     double marks;
+    //parameterised constructor
     student(String name, int rollno, double marks){
         this.name=name;
         this.rollno=rollno;
